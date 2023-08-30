@@ -14,9 +14,12 @@ which forward requests to real proxy with password injected.
 - Please install node.js first.
  
 - Install & Run
-
+- ```
+	npm install http-parser-js
+  ```
   - Normal way: Download & cd this project dir then run the js from node.
   ```
+  
   git clone https://github.com/sjitech/proxy-login-automator
   node proxy-login-automator/proxy-login-automator.js
   ```
