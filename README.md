@@ -11,28 +11,14 @@ which forward requests to real proxy with password injected.
 
 ## Usage
 
-- Please install node.js first.
- 
+- Please install node.js first for your OS, refer [here](https://medium.com/@bhardwajhimanshu2515/a-step-by-step-guide-installing-node-js-on-windows-mac-and-linux-a3bcc27b417f).
 - Install & Run
-- ```
-	npm install http-parser-js
+- Normal way: Download & cd this project dir then run the js from node.
   ```
-  - Normal way: Download & cd this project dir then run the js from node.
-  ```
-  
-  git clone https://github.com/sjitech/proxy-login-automator
-  node proxy-login-automator/proxy-login-automator.js
-  ```
-
-  - NPM way: You can also install it by npm then run it directly
-  ```
-  npm install -g proxy-login-automator
-  proxy-login-automator
-  ```
-
-  - Geek way: If you do not want to save anything to your disk then you can run this command in `bash`
-  ```
-  node <(curl -sSL https://raw.githubusercontent.com/sjitech/proxy-login-automator/master/proxy-login-automator.js)
+  git clone https://github.com/anilabhadatta/proxy-login-automator.git
+  cd proxy-login-automator
+  npm install
+  node proxy-login-automator.js <params>
   ```
 
 - Parameters of `proxy-login-automator.js`:
@@ -51,7 +37,7 @@ which forward requests to real proxy with password injected.
     -are_remotes_in_pac_https true/false    Talk to proxy servers defined in PAC with HTTPS. Default: false
     ```
 
-### Normal Proxy Server
+### Normal Proxy Server (Default Method)
 
 - You have a proxy server `http://REAL_PROXY_IP:8080`
 
